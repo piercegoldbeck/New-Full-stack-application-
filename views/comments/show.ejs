@@ -1,0 +1,12 @@
+
+<div class="container">
+    <% comments.forEach(comment => { %>
+        <div>
+        <div><u>Name:</u> <%= comment.name %> / <u>Message:</u> <%= comment.message %></div> 
+        <form class="pl-2" action="/comments/<%= comment.id %>?_method=DELETE" method="POST">
+       
+            <button type="submit" class="btn btn-danger py-0">Delete Comment</button>
+            </form>
+        </div>
+    <% }) %>
+  <div>

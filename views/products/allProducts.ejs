@@ -1,0 +1,37 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<div class="Product-container">
+  <h1><u>IMAGE GALLERY</u></h1>
+  <a href="newProduct" class="btn">Upload New Gallery Image</a>
+  <a href="/" class="btn">Go back to Home Page</a>
+ 
+  <% products.forEach(product => { %>
+    <div>
+      <div>
+        <img src="<%= product.img %>" height="300" width="300"></div>
+        <h2><u><%= product.name %></u></h2>
+        <div>Description: <%= product.description %></div>
+        <div>Price: $<%= product.price %></div>
+        <div>Quantity: <%= product.qty %></div>
+      
+        </div>
+          <a href="<%= product.id %>" class="btn">Edit Gallery Image</a>
+          <a href="<%= product.id%>/show" class="btn">Show Gallery Image By Itself</a>
+          
+        </div>
+      </div>
+    </div>
+  <% }) %>
+  <h2></h2>
+  
+  <div>
+  
+<h6></h6>
+<h6>Contact here if you are interested in buying these images:</h6>
+<h6>Email:pgoldbeck1103@gmail.com</h6>
+<h6>Phone Number: (949)-572-9790</h6>
+</body>
+</html>

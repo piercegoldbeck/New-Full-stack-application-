@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+  <style>
+    h1, h2, h4 {
+      text-align: center;
+    }
+    body {
+      background-color: aquamarine;
+    }
+    img {
+      position: center;
+      border: 10px solid black;
+    }
+  
+  </style>
+  <div class="Product-container">
+    <h1><u>IMAGE GALLERY</u></h1>
+    <h2>Welcome to my Image gallery. Glad you are here :)</h2>
+    <h6>Click here to check out all images:</h6>
+    <a href="/products/all" class="btn btn-info">All Gallery Images</a>
+    
+    <div></div>
+    <div>
+    <img src="https://i.imgur.com/mn6MSqP.jpg" height="500" width="400">
+  </div>
+  <h2><u>Comment Section</u></h2>
+  <div>
+    <%- include('./comments/show') %>
+  </div>
+  <form action="/comments/new" method="POST"> <%- include('./comments/partials/comment_partial') %></form>
+  <h6></h6>
+  <h4>Contact here if you are interested in buying these images:</h4>
+  <h4>Email:pgoldbeck1103@gmail.com</h4>
+  <h4>Phone Number: (949)-572-9790</h4>
+</body>
+</html>
