@@ -5,7 +5,7 @@ const methodOverride = require("method-override");
 const express = require("express");
 const app = express();
 require('dotenv').config()
-const port = process.env.port;
+const port = process.env.PORT;
 require("./models/index")
 const Product = require("./models/product");
 const Comment = require("./models/comment");
