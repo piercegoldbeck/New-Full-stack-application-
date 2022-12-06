@@ -1,5 +1,5 @@
 # New-Full-stack-application-
- New Full-stack-applicationg
+ New Full-stack-application
  
  ![Image 12-5-22 at 8 57 PM (1)](https://user-images.githubusercontent.com/115511495/205835171-ab10e23f-9cf0-4201-b865-9acc95afad80.jpeg)
 
