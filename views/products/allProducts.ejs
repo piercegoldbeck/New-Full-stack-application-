@@ -3,15 +3,27 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    body {
+      background-color: aquamarine;
+    }
+    img {
+  border: 10px solid black;
+ } 
+  
+  </style>
 <div class="Product-container">
   <h1><u>IMAGE GALLERY</u></h1>
   <a href="newProduct" class="btn">Upload New Gallery Image</a>
   <a href="/" class="btn">Go back to Home Page</a>
- 
+<h1>-------------------------------------------------------------------------</h1>
   <% products.forEach(product => { %>
     <div>
       <div>
-        <img src="<%= product.img %>" height="300" width="300"></div>
+        <img src="<%= product.img %>" height="400" width="400"></div>
         <h2><u><%= product.name %></u></h2>
         <div>Description: <%= product.description %></div>
         <div>Price: $<%= product.price %></div>
@@ -20,6 +32,7 @@
         </div>
           <a href="<%= product.id %>" class="btn">Edit Gallery Image</a>
           <a href="<%= product.id%>/show" class="btn">Show Gallery Image By Itself</a>
+ <h1>-------------------------------------------------------------------------</h1>
           
         </div>
       </div>
